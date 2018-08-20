@@ -1,0 +1,15 @@
+include ../modules/include/include.pug
+
+doctype html 
+html(lang="ru-RU") 
+  head  
+    block head
+    +head()
+  body(class=""+bodyClass)
+    .wrapper
+        +header()
+        block content  
+        +foot() 
+    +hidden()
+    +script() 
+    block script

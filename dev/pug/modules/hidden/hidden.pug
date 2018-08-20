@@ -1,0 +1,22 @@
+mixin hidden()
+  .hidden
+    - formTitle = 'Заказать звонок'
+    - sub_title = ''
+    - btn_text = 'Заказать'
+    +recal(' form-popup', 'recall')
+
+    - formTitle = 'Возникли еще вопросы ?'
+    - sub_title = 'Оставьте свои контакты и мы вам позвонить'
+    - btn_text = 'Отправить'
+    +recal(' form-popup', 'more_quest')
+
+    - formTitle = 'Скачать прайс-лист'
+    - sub_title = 'Оставьте свои контакты и мы отправим Вам весь наш каталог'
+    - btn_text = 'Оставить'
+    +recal(' form-popup', 'list')
+
+    - formTitle = 'Скачать пример договора'
+    //- - sub_title = 'Оставьте свои контакты и мы отправим Вам весь наш каталог'
+    - sub_title = ''
+    - btn_text = 'Скачать'
+    +recal(' form-popup', 'doc')

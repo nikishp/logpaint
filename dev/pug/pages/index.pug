@@ -1,0 +1,472 @@
+extends ../layout/main
+
+block head 
+  - var title = 'Главная'
+  - var bodyClass = ''
+block content
+
+  section.include
+    .container
+      .row
+        .col
+          h2.h2 Что входит в 550 р/м2
+          ul.include__option
+            li.include__item
+              .include__item-img: img(src="img/general/include_1.png", alt="image")
+              .include__item-text Шлифовка эксцентриком с использованием абразивного материала (Р80)
+            li.include__item
+              .include__item-img: img(src="img/general/include_1.png", alt="image")
+              .include__item-text Шлифовка эксцентриком с использованием абразивного материала (Р120)
+            li.include__item
+              .include__item-img: img(src="img/general/include_2.png", alt="image")
+              .include__item-text Нанесение грунта-антисептика
+            li.include__item
+              .include__item-img: img(src="img/general/include_3.png", alt="image")
+              .include__item-text Межслойная шлифовка / Снятие ворса (P220)
+            li.include__item
+              .include__item-img: img(src="img/general/include_4.png", alt="image")
+              .include__item-text Нанесение промежуточного слоя
+            li.include__item
+              .include__item-img: img(src="img/general/include_5.png", alt="image")
+              .include__item-text Нанесение финишного слоя 
+
+
+          .include__in-price
+            .in-price__title Включено в стоимость:
+            ul.in-price__list
+              li.in-price__item
+                .in-price__item-img: img(src="img/general/inp_1.png", alt="image")
+                .in-price__item-desc Работа
+              li.in-price__item
+                .in-price__item-img: img(src="img/general/inp_2.png", alt="image")
+                .in-price__item-desc Транспортные <br> расходы
+              li.in-price__item
+                .in-price__item-img: img(src="img/general/inp_3.png", alt="image")
+                .in-price__item-desc Строительные <br> леса
+              li.in-price__item
+                .in-price__item-img: img(src="img/general/inp_4.png", alt="image")
+                .in-price__item-desc Расходные <br> материалы
+
+  section.additional
+    .container
+      .row
+        .col
+          h2.h2 Дополнительные работы
+          .additional__content
+            ul.additional__list
+              li.additional__option
+                .additional__title
+                  .additional__title-img: img(src="img/general/add_1.png", alt="image")
+                  .additional__title-desc Углубленная шлифовка и герметизация торцов
+                .additional__price 400 р м/п
+              li.additional__option
+                .additional__title
+                  .additional__title-img: img(src="img/general/add_2.png", alt="image")
+                  .additional__title-desc Герметизация межвенцовых и угловых швов
+                .additional__price 250 р м/п
+              li.additional__option
+                .additional__title
+                  .additional__title-img: img(src="img/general/add_3.png", alt="image")
+                  .additional__title-desc Шлифовка и покраска террасного покрытия
+                .additional__price 850 р м<sup>2</sup>
+              li.additional__option
+                .additional__title
+                  .additional__title-img: img(src="img/general/add_4.png", alt="image")
+                  .additional__title-desc Шлифовка и покраска простых ограждений
+                .additional__price 900 р м/п
+              li.additional__option
+                .additional__title
+                  .additional__title-img: img(src="img/general/add_5.png", alt="image")
+                  .additional__title-desc Шлифовка и покраска потолочного покрытия
+                .additional__price 600 р м<sup>2</sup>
+              li.additional__option
+                .additional__title
+                  .additional__title-img: img(src="img/general/add_6.png", alt="image")
+                  .additional__title-desc Шлифовка и покраска наличников и плинтусов
+                .additional__price 200 р м/п
+
+  section.how
+    .container
+      .row
+        .col
+          h2.h2 Как мы работаем?
+          .how__content
+            .how__item
+              .how__img: img(src="img/general/how_1.png", alt="image")
+              b.how__title Согласование встречи
+              p.how__text Замеры, замеры влажности, пробные выкрасы
+            .how__item
+              .how__img: img(src="img/general/how_2.png", alt="image")
+              b.how__title Согласование сметы
+              p.how__text Подписание договора
+            .how__item
+              .how__img: img(src="img/general/how_3.png", alt="image")
+              b.how__title Подписание договора
+              p.how__text Выполнение работы - две недели
+            .how__item
+              .how__img: img(src="img/general/how_4.png", alt="image")
+              b.how__title Сдача объекта по акту
+
+
+  section.pricing
+    .container
+      .row
+        .col
+          h2.h2 Ценообразование
+      .row.row-prc
+        .pricing__col.pricing__col--l Конечная стоимость услуги зависит от используемого для покраски материала
+        .pricing__col.pricing__col--r
+          .warning В своей работе мы используем материалы на водной основе, на масле, а так же гибридные масла на водной основе. 
+
+      .row
+        .col
+          .pricing__content
+            .pricing__option
+              .pricing__option-cost 550 р/м<sup>2</sup>
+              .pricing__option-pl + 
+              .pricing__option-items
+                .pricing__option-item 
+                  b Renner
+                  i
+                  span 150Р
+                .pricing__option-item 
+                  b Biofa
+                  i
+                  span 150Р
+                .pricing__option-item 
+                  b PNZ
+                  i
+                  span 150Р
+                .pricing__option-item 
+                  b Osmo
+                  i
+                  span 150Р
+            .choose
+              .choose__title Выбор материала основывается на предпочтениях заказчика, и конечно на таких факторах как:
+              .choose__items
+                .choose__item
+                  .choose__img: img(src="img/general/choose_1.png", alt="image")
+                  p.choose__desc Состояние древесины и влажность
+                .choose__item
+                  .choose__img: img(src="img/general/choose_2.png", alt="image")
+                  p.choose__desc Месторасположение строения
+                .choose__item
+                  .choose__img: img(src="img/general/choose_3.png", alt="image")
+                  p.choose__desc Климатические особенности
+
+
+  section.consult
+    .container
+      .row
+        .col-3
+          .consult__img: img(src="img/general/consult_man.png", alt="image")
+        .col-9
+          h2.h2 Бесплатная консультация профессионала
+          .name Иванов Иван Иванович
+
+          .accordion
+            .accordion__item
+              .accordion__title
+                .warning Чем лучше красить?
+                  .warning__ico 
+                    +svg('down')
+              .accordion__content Ответ 1:
+            .accordion__item
+              .accordion__title
+                .warning Чем лучше шлифовать?
+                  .warning__ico 
+                    +svg('down')
+              .accordion__content Ответ 2:
+            .accordion__item
+              .accordion__title
+                .warning Что такое герметизация?
+                  .warning__ico 
+                    +svg('down')
+              .accordion__content По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.  В отличии от lorem ipsum, текст рыба на русском языке наполнит любой макет непонятным смыслом и придаст неповторимый колорит советских времен. 
+          .consult__action
+            a.btn.btn--mh.btn--ttx.popup-js(href="#more_quest") еще вопросы
+    form.consult__form(action="#").form
+      input(name='form_subject', value='Бесплатная консультация профессионала Остались вопросы?', type='hidden')
+      .container
+        .row.row--alg
+          .consult__form-item
+            .consult__form-title Остались вопросы?
+          .consult__form-item
+            .inpu-wrap
+              input(type="tel", required, name="Ваш номер телефона", placeholder="Ваш номер телефона").phone-js
+          .consult__form-item
+            button(type="submit").btn.btn--lg получить консультацию
+
+
+
+  section.calculation
+    .container
+      .row
+        .col
+          h2.h2 Заказать расчет стоимости
+    form(action="#").container.container--custom.form
+      input(name='form_subject', value='Заказать расчет стоимости', type='hidden')
+      .row
+        .calculation__item
+          .calculation__title Выберите услугу:
+          label.calculation__check
+            input(type='checkbox', name='Выберите услугу:', value='Шлифовка', checked='')
+            | Шлифовка
+          label.calculation__check
+            input(type='checkbox', name='Выберите услугу:', value='Покраска')
+            | Покраска
+          label.calculation__check
+            input(type='checkbox', name='Выберите услугу:', value='Герметизация')
+            | Герметизация
+  
+        .calculation__item
+          .calculation__title Над чем будем работать?
+          label.calculation__check
+            input(type='checkbox', name='Над чем будем работать?', value='Фасад')
+            | Фасад
+          label.calculation__check
+            input(type='checkbox', name='Над чем будем работать?', value='Стены')
+            | Стены
+          label.calculation__check
+            input(type='checkbox', name='Над чем будем работать?', value='Полы')
+            | Полы
+          label.calculation__check
+            input(type='checkbox', name='Над чем будем работать?', value='Терраса')
+            | Терраса
+        
+        .calculation__item
+          .calculation__title Укажите площадь м<sup>2</sup>
+          input(type="text", name='Площадь', placeholder="Площадь").square
+
+      .row
+        .calculation__item
+          .inpu-wrap
+            input(type="text", required , name="Ваше имя", placeholder="Ваше имя").calculation__input
+          .inpu-wrap
+            input(type="text", required , name="Ваш номер телефона", placeholder="Ваш номер телефона").calculation__input.phone-js
+        .calculation__item
+          textarea(name="Комментарий", placeholder="Комментарий")
+        .calculation__item
+          .form-police
+            input(type='checkbox', required, name='согласие на обработку данных', checked)
+            lable Я даю согласие на обработку данных, согласно 
+              a(href="#police") политики конфиденциальности
+          button.btn.btn--lg оставить заявку
+
+
+
+  section.sl-block
+    .container
+      .row
+        .col
+          h2.h2 Работаем с проверенными красками, <br> маслами и лаками
+
+    .sl
+      .sl__item: img(src="img/general/sl/sl_1.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_2.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_3.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_4.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_5.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_6.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_7.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_8.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_9.png", alt="image")
+      .sl__item: img(src="img/general/sl/sl_10.png", alt="image")
+
+
+  section.prays-list
+    .container
+      .row
+        .col
+          h2.h2 Полный прайс-лист услуг LogPaint
+
+        .prays-list__col
+          .prays-list__img: img(src="img/general/prays_img.png", alt="image")
+        .prays-list__col
+          .prays-list__options
+            .prays-list__item
+              span Условное название услуги 
+              b от 100 Р/м<sup>2</sup>
+            .prays-list__item
+              span Которое придумал дизайнер
+              b от 100 Р/м<sup>2</sup>
+            .prays-list__item
+              span Чтобы показать наглядно
+              b от 100 Р/м<sup>2</sup>
+            .prays-list__item
+              span Чтобы показать наглядно
+              b от 100 Р/м<sup>2</sup>
+            .prays-list__item
+              span В одну строку, или может быть услуга будет написана в две строки
+              b от 100 Р/м<sup>2</sup>
+          .prays-list__action
+            a.btn.btn--lgem.btn--ttx(href="#list").popup-js скачать прайс-лист
+
+
+  section.gallery
+    .container
+      .row
+        .col
+          h2.h2 Фото наших работ
+
+          .slider-for
+            .slider-for__item
+              .row
+                .col-6 
+                  a.slider__img(data-fancybox="gal", href="img/general/gl/1.jpg"): img(src="img/general/gl/1.jpg", alt="image")
+                .col-6 
+                  .slider__title Условное описание проекта
+                  p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                  p При создании генератора мы использовали небезизвестный универсальный код речей.
+
+            .slider-for__item
+              .row
+                .col-6 
+                  a.slider__img(data-fancybox="gal", href="img/general/gl/2.jpg"): img(src="img/general/gl/2.jpg", alt="image")
+                .col-6 
+                  .slider__title Условное описание проекта 2
+                  p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                  p При создании генератора мы использовали небезизвестный универсальный код речей.
+
+            .slider-for__item
+              .row
+                .col-6 
+                  a.slider__img(data-fancybox="gal", href="img/general/gl/3.jpg"): img(src="img/general/gl/3.jpg", alt="image")
+                .col-6 
+                  .slider__title Условное описание проекта 3
+                  p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                  p При создании генератора мы использовали небезизвестный универсальный код речей.
+
+            .slider-for__item
+              .row
+                .col-6 
+                  a.slider__img(data-fancybox="gal", href="img/general/gl/4.jpg"): img(src="img/general/gl/4.jpg", alt="image")
+                .col-6 
+                  .slider__title Условное описание проекта 4
+                  p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                  p При создании генератора мы использовали небезизвестный универсальный код речей.
+
+            .slider-for__item
+              .row
+                .col-6 
+                  a.slider__img(data-fancybox="gal", href="img/general/gl/5.jpg"): img(src="img/general/gl/5.jpg", alt="image")
+                .col-6 
+                  .slider__title Условное описание проекта 5
+                  p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                  p При создании генератора мы использовали небезизвестный универсальный код речей.
+
+            .slider-for__item
+              .row
+                .col-6 
+                  a.slider__img(data-fancybox="gal", href="img/general/gl/6.jpg"): img(src="img/general/gl/6.jpg", alt="image")
+                .col-6 
+                  .slider__title Условное описание проекта 6
+                  p Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. 
+                  p При создании генератора мы использовали небезизвестный универсальный код речей.
+
+      .row
+        .col-6 
+          .slider-nav
+            .slider-nav__item
+              .slider-nav__img: img(src="img/general/gl/1.jpg", alt="image")
+            .slider-nav__item
+              .slider-nav__img: img(src="img/general/gl/2.jpg", alt="image")
+            .slider-nav__item
+              .slider-nav__img: img(src="img/general/gl/3.jpg", alt="image")
+            .slider-nav__item
+              .slider-nav__img: img(src="img/general/gl/4.jpg", alt="image")
+            .slider-nav__item
+              .slider-nav__img: img(src="img/general/gl/5.jpg", alt="image")
+            .slider-nav__item
+              .slider-nav__img: img(src="img/general/gl/6.jpg", alt="image")
+
+
+
+  section.doc
+    .container
+      .row
+        .col
+          h2.h2 Работаем по договору
+      .row
+        .col-4
+          .doc__option
+            .doc__img: img(src="img/general/doc_1.png", alt="image")
+            .doc__desc Соблюдение сроков
+        .col-4
+          .doc__option
+            .doc__img: img(src="img/general/doc_2.png", alt="image")
+            .doc__desc Фиксация цены
+        .col-4
+          .doc__option
+            .doc__img: img(src="img/general/doc_3.png", alt="image")
+            .doc__desc Соблюдение объемов работ
+      .row
+        .col
+          .doc__action
+            a.btn.btn--lg(href="#doc").popup-js скачать пример договора
+
+
+  section.more-info
+    .container
+      .row
+        .col-5
+          .more-info__content
+            h2.h2 Остались вопросы?
+            .office 
+              b Наш офис находится по адресу:
+              | г. Нижний Новгород, ул. Карла Маркса, 32
+            .more-info__contact
+              a.more-info__link.more-info__link--phone(href="tel:")
+                +svg('phone')
+                span 8 (831) <b>410 37 12</b>
+              a.more-info__link.more-info__link--mail(href="mailto:ecokubnn@mail.ru")
+                +svg('mail') 
+                | ecokubnn@mail.ru
+            .more-info__call
+              a.btn.btn--lgem.btn--ttx.popup-js(href="#recall")  перезвоним за 24 сек. жми!
+        .col-7
+          .geo
+            #maps.map
+              //- <iframe src="https://yandex.ru/map-widget/v1/-/CBuhY2VypA" width="560" height="400" frameborder="0" allowfullscreen="true"></iframe>
+
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+  script.
+    var myMap;
+    ymaps.ready(function () {
+         // Создание экземпляра карты и его привязка к контейнеру с
+        // заданным id ("map").
+        myMap = new ymaps.Map("maps", {
+      // При инициализации карты обязательно нужно указать
+      // её центр и коэффициент масштабирования.
+      center: [56.342436, 43.941972],
+      // Масштаб
+      zoom: 17
+    });
+        //Маркер
+        var myPlacemark = new ymaps.Placemark([56.342436, 43.941972], {}, {
+          preset: 'islands#redDotIcon'
+        });
+    myMap.geoObjects.add(myPlacemark); // Размещение геообъекта на карте.
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- 

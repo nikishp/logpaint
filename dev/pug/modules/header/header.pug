@@ -1,0 +1,61 @@
+mixin header(name)
+  - name = name || ''
+  header(class="header " + name)
+    .container
+      .row.row--header-top
+        .header__item
+          .header__slogan Отделка деревянных домов, соблюдая традиции зодчества Делаем с душой для Вас!
+          .header__geolacation
+            +svg('marker')
+            | Работаем по всей Московской области
+        .header__item
+          a.logo(href="#"): img(src="img/content/logo.png", alt="logo")
+        .header__item
+          a.mail(href="mailto:ecokubnn@mail.ru") ecokubnn@mail.ru
+          a.phone(href="tel:")
+            +svg('phone')
+            span 8 (831) <b>410 37 12</b>
+          .recall
+            a.btn.popup-js(href="#recall")  Заказать звонок
+
+      .row
+        .col
+          h1.h1 Шлифовка и покраска <br> деревянных домов
+          .header__desc от 550 р/м2 <br>Гарантия 5 лет
+          //- .header__direction листайте вниз
+          .direction: img(src="img/general/scroll_down.png", alt="image")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//- 

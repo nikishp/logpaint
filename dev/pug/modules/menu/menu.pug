@@ -1,0 +1,99 @@
+mixin menuClick()
+  nav.header__nav-wrap
+    a#openup.header__list-open(href='#')
+      | Меню
+      span.hamburger.hamburger--collapse
+        span.hamburger-box
+          span.hamburger-inner
+    ul.header__list
+      li.header__list-item
+        a.header__list-link(href="#")
+          | Menu item 1
+        .header__list-open-submenu
+          +svg('down','header__list-open-svg')
+        .header__list-sublist-wrap
+          ul.header__list-sublist
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 1
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 2
+      li.header__list-item
+        a.header__list-link(href='#')
+          | Menu item 2
+        .header__list-open-submenu
+          +svg('down','header__list-open-svg')
+        .header__list-sublist-wrap
+          ul.header__list-sublist
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 1
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 2
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 3
+      li.header__list-item
+        a.header__list-link(href='#')
+          | Menu item 3
+        .header__list-open-submenu
+          +svg('down','header__list-open-svg')
+        .header__list-sublist-wrap
+          ul.header__list-sublist
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 1
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 2
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 3
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 4
+      li.header__list-item
+        a.header__list-link(href='#') Menu item 4 
+ 
+mixin menuHover()
+  nav.header__nav-wrap
+    a#openup.header__list-open(href='#')
+      | Меню
+      span.hamburger.hamburger--collapse
+        span.hamburger-box
+          span.hamburger-inner
+    ul.header__list
+      li.header__list-item
+        a.header__list-link(href="#")
+          | Menu item 1
+        .header__list-open-submenu
+          +svg('down','header__list-open-svg')
+        .header__list-sublist-wrap
+          ul.header__list-sublist
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 1
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 2
+      li.header__list-item
+        a.header__list-link(href='#')
+          | Menu item 2          
+        .header__list-open-submenu
+          +svg('down','header__list-open-svg')
+        .header__list-sublist-wrap
+          ul.header__list-sublist
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 1
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 2
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 3
+      li.header__list-item
+        a.header__list-link(href='#')
+          | Menu item 3
+        .header__list-open-submenu
+          +svg('down','header__list-open-svg')
+        .header__list-sublist-wrap
+          ul.header__list-sublist
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 1
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 2
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 3
+            li.header-sublist__item
+              a.header-sublist__link(href='#') Submenu item 4
+      li.header__list-item
+        a.header__list-link(href='#') Menu item 4 
